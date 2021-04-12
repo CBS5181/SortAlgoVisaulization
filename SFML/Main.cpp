@@ -80,6 +80,9 @@ void merge(int* arr, int begin, int mid, int end)
 		arr[k++] = R[ri++];
 		std::this_thread::sleep_for(std::chrono::microseconds(10000));
 	}
+	
+	delete[] L;
+	delete[] R;
 }
 
 void mergeSort(int* arr, int begin, int end)
